@@ -194,7 +194,7 @@
   
   \vspace{5mm}
   \textbf{Pregunta:}
-  ¿Existe una base $\mathcal{B} = \{ v_{1}, v_{2} \}$ de $\mathbb{R}^{2}$ tal que las imágenes de $v_{1}$ y $v_{2}$ sean particularmente fáciles de describir?
+  ¿Existe una base $\mathcal{B} = \{ v_{1}, v_{2} \}$ de $\mathbb{R}^{2}$ tal que las imágenes de $g(v_{1})$ y $g(v_{2})$ sean fáciles de calcular?
   
     
 \end{frame}
@@ -203,13 +203,11 @@
   \frametitle{Elegir una base apropiada}
   Por ejemplo, $f(1,0) = (3,1)$.
   \begin{center}
-    \includegraphics[scale=.4]{empty-figure.png}
+    \includegraphics[scale=.15]{linear-map-1.png}
   \end{center}
   \pause
 
-  $\quad \rightsquigarrow$ No es particularmente fácil de describir.
-  \pause
-  Por ejemplo, no es fácil calcular $g(1,0)$.
+  $\quad \rightsquigarrow$ No es fácil calcular $g(1,0)$.
 
 \end{frame}
 
@@ -217,11 +215,11 @@
   \frametitle{Elegir una base apropiada}
   En cambio, para $v_{1} = (1,1)$, tenemos que $f(1,1) = (1,1)$.
   \begin{center}
-    \includegraphics[scale=.4]{empty-figure.png}
+    \includegraphics[scale=.15]{linear-map-2.png}
   \end{center}
   \pause
 
-  $\quad \rightsquigarrow$ En este caso sí es fácil calcular $g(1,1)$!
+  $\quad \rightsquigarrow$ Es fácil calcular $g(1,1)$:
   \[ g(1,1) = f \circ \overset{10)}{\cdots} \circ f(1,1) = (1,1). \]
 
 \end{frame}
@@ -232,11 +230,11 @@
   \[ f(2,1) = (4,2) = {\color{red} 2}\cdot (2,1). \]
 
   \begin{center}
-    \includegraphics[scale=.4]{empty-figure.png}
+    \includegraphics[scale=.15]{linear-map-3.png}
   \end{center}
   \pause
 
-  $\quad \rightsquigarrow$ En este caso también es fácil calcular $g(2,1)$:
+  $\quad \rightsquigarrow$ Es fácil calcular $g(2,1)$:
   \[ g(2,1) = f \circ \overset{10)}{\cdots} \circ f(2,1) = 2^{10}\cdot (2,1). \]
 
 \end{frame}
