@@ -51,6 +51,16 @@
     \end{tikzpicture}
 }
 
+\newcommand{\ponerQRcaption}[2]{
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[anchor=south east, inner sep=15pt, opacity=#2, align=center] at (current page.south east) {
+            \includegraphics[width=#1]{QR.png} \\
+            \vspace{1mm}
+            {\tiny \textbf{DIAPOSITIVAS}}
+        };
+    \end{tikzpicture}
+}
+
 % 1. Para que aparezca en todas las diapositivas de contenido (pequeño y gris)
 \addtobeamertemplate{background}{\ponerQR{1.5cm}{0.3}}{}
 
@@ -58,7 +68,7 @@
 
 {
     % Sobrescribimos la plantilla solo para este bloque
-    \setbeamertemplate{background}{\ponerQR{2.2cm}{1.0}}
+    \setbeamertemplate{background}{\ponerQRcaption{2.2cm}{1.0}}
     \begin{frame}[plain]
         \titlepage
     \end{frame}
@@ -417,7 +427,7 @@
 
 {
     % Sobrescribimos la plantilla solo para este bloque
-    \setbeamertemplate{background}{\ponerQR{2.2cm}{1.0}}
+    \setbeamertemplate{background}{\ponerQRcaption{2.2cm}{1.0}}
     \begin{frame}[plain]
       \vfill
       \begin{center}
